@@ -18,8 +18,11 @@
             <a href="/admin/dashboard" class="block hover:bg-gray-700 p-2 rounded">
                 📊 Dashboard
             </a>
-            <a href="#" class="block hover:bg-gray-700 p-2 rounded">
+            <a href="{{ route('admin.products.index')}}" class="block hover:bg-gray-700 p-2 rounded">
                 🧱 Produk
+            </a>
+            <a href="{{ route('admin.categories.index')}}" class="block hover:bg-gray-700 p-2 rounded">
+                🗂️ Kategori
             </a>
             <a href="#" class="block hover:bg-gray-700 p-2 rounded">
                 📦 Pesanan

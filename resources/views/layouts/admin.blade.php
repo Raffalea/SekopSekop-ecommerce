@@ -1,57 +1,97 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title')</title>
+    <title>@yield('title', 'Admin Panel')</title>
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-gray-100 flex">
+<body class="bg-[#ece7e1] flex min-h-screen font-sans text-[#867c6d]">
 
-    <!-- Sidebar -->
-    <aside class="w-64 bg-gray-900 text-white min-h-screen">
-        <div class="p-6 font-bold text-xl bg-orange-600">
-            Admin Panel
+<!-- ================= SIDEBAR ================= -->
+<aside class="w-64 bg-[#7a4f2f] text-[#ece7e1] flex flex-col">
+
+    <!-- Brand -->
+    <div class="px-6 py-5 border-b border-[#947757]">
+        <div class="text-xl font-bold tracking-wide">🧱 SekopSekop</div>
+        <div class="text-sm opacity-90">Admin Panel</div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="flex-1 px-4 py-6 space-y-2 text-sm">
+
+        <!-- Dashboard -->
+        <a href="/admin/dashboard"
+           class="flex items-center gap-2 px-3 py-2 rounded transition
+           {{ request()->is('admin/dashboard') ? 'bg-[#947757] text-white' : 'hover:bg-[#947757]/80' }}">
+            📊 <span>Dashboard</span>
+        </a>
+
+        <!-- Produk -->
+        <a href="{{ route('admin.products.index') }}"
+           class="flex items-center gap-2 px-3 py-2 rounded transition
+           {{ request()->is('admin/products*') ? 'bg-[#947757] text-white' : 'hover:bg-[#947757]/80' }}">
+            🧱 <span>Produk</span>
+        </a>
+
+        <!-- Kategori -->
+        <a href="{{ route('admin.categories.index') }}"
+           class="flex items-center gap-2 px-3 py-2 rounded transition
+           {{ request()->is('admin/categories*') ? 'bg-[#947757] text-white' : 'hover:bg-[#947757]/80' }}">
+            🗂️ <span>Kategori</span>
+        </a>
+
+        <!-- Pesanan -->
+        <a href="#"
+           class="flex items-center gap-2 px-3 py-2 rounded transition hover:bg-[#947757]/80">
+            📦 <span>Pesanan</span>
+        </a>
+
+        <!-- User -->
+        <a href="#"
+           class="flex items-center gap-2 px-3 py-2 rounded transition hover:bg-[#947757]/80">
+            👤 <span>User</span>
+        </a>
+
+    </nav>
+
+    <!-- Logout -->
+    <div class="px-4 py-4 border-t border-[#947757]">
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit"
+                    class="w-full flex items-center gap-2 px-3 py-2 rounded
+                           text-red-200 hover:bg-[#947757]/80 transition">
+                🚪 <span>Logout</span>
+            </button>
+        </form>
+    </div>
+
+</aside>
+<!-- =============== END SIDEBAR =============== -->
+
+
+<!-- ================= MAIN CONTENT ================= -->
+<div class="flex-1 flex flex-col">
+
+    <!-- Topbar -->
+    <header class="bg-white px-6 py-4 flex justify-between items-center shadow-sm">
+        <h1 class="text-xl font-semibold text-[#7a4f2f]">
+            @yield('page-title')
+        </h1>
+
+        <div class="text-sm">
+            Halo, <span class="font-semibold text-[#7a4f2f]">Admin</span>
         </div>
-        <nav class="p-4 space-y-3">
-            <a href="/admin/dashboard" class="block hover:bg-gray-700 p-2 rounded">
-                📊 Dashboard
-            </a>
-            <a href="{{ route('admin.products.index')}}" class="block hover:bg-gray-700 p-2 rounded">
-                🧱 Produk
-            </a>
-            <a href="{{ route('admin.categories.index')}}" class="block hover:bg-gray-700 p-2 rounded">
-                🗂️ Kategori
-            </a>
-            <a href="#" class="block hover:bg-gray-700 p-2 rounded">
-                📦 Pesanan
-            </a>
-            <a href="#" class="block hover:bg-gray-700 p-2 rounded">
-                👤 User
-            </a>
-            <form action="{{ route('logout') }}" method="POST">
-                @csrf
-                <button type="submit" class="w-full text-left text-red-400 hover:bg-gray-700 p-2 rounded">
-                    🚪 Logout
-                </button>
-            </form>
-        </nav>
-    </aside>
+    </header>
 
-    <!-- Main Content -->
+    <!-- Content -->
     <main class="flex-1 p-6">
-        <!-- Header -->
-        <div class="flex justify-between items-center mb-6">
-            <h1 class="text-2xl font-bold">@yield('page-title')</h1>
-            <span class="text-gray-600">
-                Halo, <b>Admin</b>
-            </span>
-        </div>
-
         @yield('content')
     </main>
 
-</body>
+</div>
+<!-- =============== END MAIN CONTENT =============== -->
 
+</body>
 </html>

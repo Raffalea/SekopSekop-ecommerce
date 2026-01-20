@@ -1,59 +1,82 @@
 @extends('layouts.admin')
 
+@section('title', 'Kategori')
+@section('page-title', 'Kategori Produk')
+
 @section('content')
-<div class="p-6">
-    <div class="flex justify-between mb-4">
-        <h1 class="text-xl font-bold">Kategori Produk</h1>
-        <a href="{{ route('admin.categories.create') }}"
-           class="bg-blue-600 text-white px-4 py-2 rounded">
-            + Tambah
-        </a>
+
+<a href="{{ route('admin.categories.create') }}"
+   class="inline-block mb-5 bg-orange-600 hover:bg-orange-700
+          text-white px-5 py-2 rounded-lg">
+    + Tambah Kategori
+</a>
+
+@if(session('success'))
+    <div class="mb-4 bg-orange-50 text-orange-700 border border-orange-200
+                px-4 py-3 rounded-lg">
+        {{ session('success') }}
     </div>
+@endif
 
-    @if(session('success'))
-        <div class="bg-green-100 text-green-700 p-3 rounded mb-4">
-            {{ session('success') }}
-        </div>
-    @endif
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-x-auto">
 
-    <table class="w-full border">
-        <thead class="bg-gray-100">
+    <table class="w-full text-sm">
+        <thead class="bg-gray-50 text-gray-600">
             <tr>
-                <th class="p-2 border">No</th>
-                <th class="p-2 border">Nama</th>
-                <th class="p-2 border">Slug</th>
-                <th class="p-2 border">Deskripsi</th>
-                <th class="p-2 border">Aksi</th>
+                <th class="px-4 py-3">No</th>
+                <th class="px-4 py-3">Nama</th>
+                <th class="px-4 py-3">Slug</th>
+                <th class="px-4 py-3">Deskripsi</th>
+                <th class="px-4 py-3">Aksi</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach($categories as $category)
-            <tr>
-                <td class="p-2 border">{{ $loop->iteration }}</td>
-                <td class="p-2 border">{{ $category->name }}</td>
-                <td class="p-2 border">{{ $category->slug }}</td>
-                <td class="p-2 border">{{ $category->description }}</td>
-                <td class="p-2 border flex gap-2">
+
+        <tbody class="divide-y divide-gray-100">
+            @foreach ($categories as $category)
+            <tr class="hover:bg-gray-50">
+
+                <td class="px-4 py-3 text-center">
+                    {{ $loop->iteration }}
+                </td>
+
+                <td class="px-4 py-3 font-medium text-gray-800">
+                    {{ $category->name }}
+                </td>
+
+                <td class="px-4 py-3 text-gray-600">
+                    {{ $category->slug }}
+                </td>
+
+                <td class="px-4 py-3">
+                    {{ $category->description ?? '-' }}
+                </td>
+
+                <td class="px-4 py-3 space-x-2 text-center">
                     <a href="{{ route('admin.categories.edit', $category) }}"
-                       class="bg-yellow-500 text-white px-3 py-1 rounded">Edit</a>
+                       class="text-orange-600 hover:underline">
+                        Edit
+                    </a>
 
                     <form action="{{ route('admin.categories.destroy', $category) }}"
-                          method="POST">
+                          method="POST" class="inline">
                         @csrf
                         @method('DELETE')
-                        <button class="bg-red-600 text-white px-3 py-1 rounded"
-                                onclick="return confirm('Hapus kategori?')">
+                        <button onclick="return confirm('Hapus kategori?')"
+                                class="text-red-500 hover:underline">
                             Hapus
                         </button>
                     </form>
                 </td>
+
             </tr>
             @endforeach
         </tbody>
     </table>
 
-    <div class="mt-4">
-        {{ $categories->links() }}
-    </div>
 </div>
+
+<div class="mt-4">
+    {{ $categories->links() }}
+</div>
+
 @endsection

@@ -51,7 +51,7 @@ class AuthController extends Controller
                 return redirect('/admin/dashboard');
             }
 
-            return redirect('/user/dashboard');
+            return redirect('/user/index');
         }
 
         return back()->withErrors([

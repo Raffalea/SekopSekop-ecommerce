@@ -47,9 +47,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 Route::middleware(['auth', 'role:user'])->group(function () {
 
-    Route::get('/user/dashboard', function () {
-        return view('user.dashboard');
-    })->name('user.dashboard');
+    // Route::get('/user/index', function () {
+    //     return view('user.index');
+    // })->name('user.index');
 
     Route::get('/user/index', function () {
         return view('user.index');

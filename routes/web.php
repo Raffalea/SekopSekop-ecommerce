@@ -6,6 +6,7 @@ use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\User\HomeController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -42,7 +43,6 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     Route::resource('categories', CategoryController::class)
         ->names('admin.categories');
-
 });
 
 Route::middleware(['auth', 'role:user'])->group(function () {
@@ -51,10 +51,33 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     //     return view('user.index');
     // })->name('user.index');
 
-    Route::get('/user/index', function () {
-        return view('user.index');
-    })->name('user.index');
+    Route::get('/user/index', [HomeController::class, 'index'])
+        ->name('user.index');
     Route::get('/user/about', function () {
         return view('user.about');
     })->name('user.about');
+    Route::get('/user/cart', function () {
+        return view('user.cart');
+    })->name('user.cart');
+    Route::get('/user/checkout', function () {
+        return view('user.checkout');
+    })->name('user.checkout');
+    Route::get('/user/contact', function () {
+        return view('user.contact');
+    })->name('user.contact');
+    Route::get('/user/news', function () {
+        return view('user.news');
+    })->name('user.news');
+    Route::get('/user/shop', function () {
+        return view('user.shop');
+    })->name('user.shop');
+    Route::get('/user/singlenews', function () {
+        return view('user.singlenews');
+    })->name('user.singlenews');
+    Route::get('/user/singleproduct', function () {
+        return view('user.singleproduct');
+    })->name('user.singleproduct');
+    Route::get('/user/404', function () {
+        return view('user.404');
+    })->name('user.404');
 });

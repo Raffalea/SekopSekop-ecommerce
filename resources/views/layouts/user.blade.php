@@ -39,7 +39,7 @@
                     <div class="main-menu-wrap">
                         <!-- logo -->
                         <div class="site-logo">
-                            <a href="index.html">
+                            <a href="/user/index">
                                 <img src=" {{asset('assets/img/logo.png')}}" alt="">
                             </a>
                         </div>
@@ -53,33 +53,33 @@
                                 <li><a href="/user/about">About</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="sub-menu">
-                                        <li><a href="404.html">404 page</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Check Out</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="/user/404">404 page</a></li>
+                                        <li><a href="/user/about">About</a></li>
+                                        <li><a href="/user/cart">Cart</a></li>
+                                        <li><a href="/user/checkout">Check Out</a></li>
+                                        <li><a href="/user/contact">Contact</a></li>
+                                        <li><a href="/user/news">News</a></li>
+                                        <li><a href="/user/shop">Shop</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="news.html">News</a>
+                                <li><a href="/user/news">News</a>
                                     <ul class="sub-menu">
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="single-news.html">Single News</a></li>
+                                        <li><a href="/user/news">News</a></li>
+                                        <li><a href="/user/singlenews">Single News</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="shop.html">Shop</a>
+                                <li><a href="/user/contact">Contact</a></li>
+                                <li><a href="/user/shop">Shop</a>
                                     <ul class="sub-menu">
-                                        <li><a href="shop.html">Shop</a></li>
-                                        <li><a href="checkout.html">Check Out</a></li>
-                                        <li><a href="single-product.html">Single Product</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="/user/shop">Shop</a></li>
+                                        <li><a href="/user/checkout">Check Out</a></li>
+                                        <li><a href="/user/singleproduct">Single Product</a></li>
+                                        <li><a href="/user/cart">Cart</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <div class="header-icons">
-                                        <a class="shopping-cart" href="cart.html"><i
+                                        <a class="shopping-cart" href="/user/cart"><i
                                                 class="fas fa-shopping-cart"></i></a>
                                         <a class="mobile-hide search-bar-icon" href="#"><i
                                                 class="fas fa-search"></i></a>

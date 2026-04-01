@@ -7,39 +7,36 @@ use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         Category::create([
-            'name' => 'Electronics',
-            'slug' => 'electronics',
-            'description' => 'Electronic devices and gadgets',
+            'name' => 'Material Dasar',
+            'slug' => 'material-dasar',
+            'description' => 'Semen, pasir, batu bata, dan bahan utama konstruksi',
         ]);
 
         Category::create([
-            'name' => 'Clothing',
-            'slug' => 'clothing',
-            'description' => 'Fashion and apparel',
+            'name' => 'Besi & Baja',
+            'slug' => 'besi-baja',
+            'description' => 'Besi beton, hollow, dan material struktur',
         ]);
 
         Category::create([
-            'name' => 'Home & Garden',
-            'slug' => 'home-garden',
-            'description' => 'Home improvement and gardening supplies',
+            'name' => 'Finishing',
+            'slug' => 'finishing',
+            'description' => 'Cat, keramik, dan material finishing',
         ]);
 
         Category::create([
-            'name' => 'Books',
-            'slug' => 'books',
-            'description' => 'Books and literature',
+            'name' => 'Perlengkapan',
+            'slug' => 'perlengkapan',
+            'description' => 'Paku, triplek, dan alat bantu bangunan',
         ]);
 
         Category::create([
-            'name' => 'Sports',
-            'slug' => 'sports',
-            'description' => 'Sports equipment and accessories',
+            'name' => 'Atap & Genteng',
+            'slug' => 'atap-genteng',
+            'description' => 'Genteng dan material atap rumah',
         ]);
     }
 }

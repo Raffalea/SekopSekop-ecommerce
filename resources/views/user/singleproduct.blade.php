@@ -128,7 +128,7 @@
 	</div>
 	<!-- end more products -->
 
-	<!-- logo carousel -->
+	{{-- <!-- logo carousel -->
 	<div class="logo-carousel-section">
 		<div class="container">
 			<div class="row">
@@ -153,11 +153,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- end logo carousel -->
 
 	<!-- footer -->
-	<div class="footer-area">
+	{{-- <div class="footer-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
@@ -200,7 +200,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- end footer -->
 	
 	<!-- copyright -->
@@ -208,9 +208,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
+					{{-- <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
 						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
-					</p>
+					</p> --}}
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">

@@ -1590,29 +1590,105 @@ div.owl-controls, .owl-controls div {
 
 ----------------------------------------------------------------------------- */
 .news-bg-1 {
-  background-image: url(../img/latest-news/news-bg-1.jpg);
+  background-image: url(../img/tukang-bangunan.jpg);
 }
 
 .news-bg-2 {
-  background-image: url(../img/latest-news/news-bg-2.jpg);
+  background-image: url(../img/products/semen.jpg);
 }
 
 .news-bg-3 {
-  background-image: url(../img/latest-news/news-bg-3.jpg);
+  background-image: url(../img/products/bangunan.jpg);
 }
 
 .news-bg-4 {
-  background-image: url(../img/latest-news/news-bg-4.jpg);
+  background-image: url(../img/latest-news/belanja.jpg);
 }
 
 .news-bg-5 {
-  background-image: url(../img/latest-news/news-bg-5.jpg);
+  background-image: url(../img/latest-news/bata.jpg);
 }
 
 .news-bg-6 {
-  background-image: url(../img/latest-news/news-bg-6.jpg);
+  background-image: url(../img/latest-news/alat.jpg);
+}
+.product-lists .col-lg-4 {
+  display: flex;
 }
 
+.single-product-item {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.single-product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.single-product-item h3 {
+  font-size: 18px;
+  min-height: 50px;
+}
+
+.product-price {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cart-btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #F28123;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
+  background: #051922;
+}
+.product-lists .col-lg-4 {
+  float: none !important;
+}
+.product-lists {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.product-lists > div {
+  margin-bottom: 30px;
+}
+.single-product-item {
+  position: relative !important;
+}
 .latest-news-bg {
   height: 200px;
   background-size: cover;
@@ -1651,10 +1727,6 @@ p.blog-meta span i {
 p.excerpt {
   line-height: 1.8;
   color: #555;
-}
-
-.latest-news a.boxed-btn {
-  margin-top: 80px;
 }
 
 .news-text-box {
@@ -2046,27 +2118,29 @@ p.testimonial-body {
 ----------------------------------------------------------------------------- */
 a.video-play-btn {
   position: absolute;
-  background-color: #F28123;
-  color: #051922;
-  width: 90px;
-  height: 90px;
-  text-align: center;
-  line-height: 92px;
-  border-radius: 50%;
-  font-size: 20px;
-  padding-left: 5px;
-  display: block;
-  z-index: 2;
   top: 50%;
-  margin-top: -45px;
-  -webkit-box-shadow: 0 0 20px #adadad;
-  box-shadow: 0 0 20px #adadad;
   left: 50%;
-  margin-left: -45px;
+  transform: translate(-50%, -50%); /* 🔥 ini kunci utama */
+
+  background-color: #F28123; /* warna kamu */
+  color: #313647;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  z-index: 2;
+
+  box-shadow: 0 0 20px #adadad;
 }
 
 .abt-bg {
-  background-image: url(../img/abt.jpg);
+  background-image: url(../img/abt3.png);
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -2158,7 +2232,7 @@ a.video-play-btn {
 }
 
 .feature-bg:after {
-  background-image: url(../img/feature-bg.jpg);
+  background-image: url(../img/abt3.png);
   position: absolute;
   right: 0;
   top: 0;
@@ -2174,19 +2248,19 @@ a.video-play-btn {
 }
 
 .team-bg-1 {
-  background-image: url(../img/team/team-1.jpg);
+  background-image: url(../img/team/FAZLE\ A.JPG);
 }
 
 .team-bg-2 {
-  background-image: url(../img/team/team-2.jpg);
+  background-image: url(../img/team/RIFKI\ A.JPG);
 }
 
 .team-bg-3 {
-  background-image: url(../img/team/team-3.jpg);
+  background-image: url(../img/team/SHAQUILLE\ R.JPG);
 }
 
 .team-bg-4 {
-  background-image: url(../img/team/team-4.jpg);
+  background-image: url(../img/team/FAZLE\ A.JPG);
 }
 
 .team-bg {
@@ -2232,17 +2306,26 @@ ul.social-link-team li {
 }
 
 ul.social-link-team li a {
-  color: #fff;
-  background-color: #F28123;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+
+  background-color: #F28123; /* warna kamu */
+  color: #313647;
+
   border-radius: 50%;
-  display: block;
-  margin: 5px;
+  text-decoration: none;
+
+  transition: 0.3s;
 }
 
+ul.social-link-team li a:hover {
+  background-color: #435663;
+  color: #fff;
+}
 /* -----------------------------------------------------------------------------
 
 # Contact Page Styles

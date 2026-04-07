@@ -68,9 +68,8 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/news', function () {
         return view('user.news');
     })->name('user.news');
-    Route::get('/user/shop', function () {
-        return view('user.shop');
-    })->name('user.shop');
+    Route::get('/user/shop', [HomeController::class, 'shop'])
+        ->name('user.shop');
     Route::get('/user/singlenews', function () {
         return view('user.singlenews');
     })->name('user.singlenews');

@@ -51,7 +51,7 @@
                                 <li class=""><a href="/user/index">Home</a>
                                 </li>
                                 <li><a href="/user/about">About</a></li>
-                                <li><a href="#">Pages</a>
+                                {{-- <li><a href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="/user/404">404 page</a></li>
                                         <li><a href="/user/about">About</a></li>
@@ -61,7 +61,7 @@
                                         <li><a href="/user/news">News</a></li>
                                         <li><a href="/user/shop">Shop</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li><a href="/user/news">News</a>
                                     <ul class="sub-menu">
                                         <li><a href="/user/news">News</a></li>

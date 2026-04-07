@@ -13,4 +13,11 @@ class HomeController extends Controller
 
         return view('user.index', compact('products'));
     }
+
+    public function shop()
+    {
+        $products = Product::latest()->paginate(6); // ⬅️ pagination
+
+        return view('user.shop', compact('products'));
+    }
 }

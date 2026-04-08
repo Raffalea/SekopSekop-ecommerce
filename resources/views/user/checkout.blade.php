@@ -129,15 +129,15 @@
 									<td>Total</td>
 								</tr>
 								<tr>
-									<td>Strawberry</td>
+									<td>Batu bata merah</td>
 									<td>$85.00</td>
 								</tr>
 								<tr>
-									<td>Berry</td>
+									<td>Semen tiga roda</td>
 									<td>$70.00</td>
 								</tr>
 								<tr>
-									<td>Lemon</td>
+									<td>pasir bangunan</td>
 									<td>$35.00</td>
 								</tr>
 							</tbody>
@@ -156,7 +156,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a href="#" class="boxed-btn">Place Order</a>
+						<a href="{{ route('user.shop') }}" class="boxed-btn">Place Order</a>
 					</div>
 				</div>
 			</div>

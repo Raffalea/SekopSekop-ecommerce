@@ -1682,7 +1682,11 @@ div.owl-controls, .owl-controls div {
   display: flex !important;
   flex-wrap: wrap !important;
 }
-
+.product-category {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 5px;
+}
 .product-lists > div {
   margin-bottom: 30px;
 }

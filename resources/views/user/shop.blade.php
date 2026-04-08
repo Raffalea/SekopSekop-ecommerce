@@ -39,7 +39,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="breadcrumb-text">
-                            <p>Fresh and Organic</p>
+                            <p>We provide high-quality construction materials
+                            </p>
                             <h1>Shop</h1>
                         </div>
                     </div>
@@ -51,6 +52,28 @@
         <!-- products -->
         <div class="product-section mt-150 mb-150">
             <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="product-filters text-center">
+                            <ul>
+
+                                {{-- ALL --}}
+                                <li class="{{ request('category') == null ? 'active' : '' }}">
+                                    <a href="{{ route('user.shop') }}">All</a>
+                                </li>
+
+                                {{-- LOOP CATEGORY --}}
+                                @foreach ($categories as $category)
+                                    <li class="{{ request('category') == $category->slug ? 'active' : '' }}">
+                                        <a href="{{ route('user.shop', ['category' => $category->slug]) }}">
+                                            {{ $category->name }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row my-products">
                     @foreach ($products as $product)
@@ -69,8 +92,8 @@
                                     Rp {{ number_format($product->price, 0, ',', '.') }}
                                 </p>
 
-                                <a href="#" class="cart-btn">
-                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                <a href="{{ route('user.cart') }}" class="cart-btn"> <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
                                 </a>
 
                             </div>
@@ -78,17 +101,40 @@
                         </div>
                     @endforeach
                 </div>
-				<div class="row">
+                <div class="row">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <div class="pagination-wrap">
                                     <ul>
-                                        <li><a href="#">Prev</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a class="active" href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">Next</a></li>
+
+                                        {{-- PREV --}}
+                                        @if ($products->onFirstPage())
+                                            <li><span>Prev</span></li>
+                                        @else
+                                            <li>
+                                                <a href="{{ $products->previousPageUrl() }}">Prev</a>
+                                            </li>
+                                        @endif
+
+                                        {{-- NUMBER --}}
+                                        @foreach ($products->getUrlRange(1, $products->lastPage()) as $page => $url)
+                                            @if ($page == $products->currentPage())
+                                                <li><a class="active" href="#">{{ $page }}</a></li>
+                                            @else
+                                                <li><a href="{{ $url }}">{{ $page }}</a></li>
+                                            @endif
+                                        @endforeach
+
+                                        {{-- NEXT --}}
+                                        @if ($products->hasMorePages())
+                                            <li>
+                                                <a href="{{ $products->nextPageUrl() }}">Next</a>
+                                            </li>
+                                        @else
+                                            <li><span>Next</span></li>
+                                        @endif
+
                                     </ul>
                                 </div>
                             </div>

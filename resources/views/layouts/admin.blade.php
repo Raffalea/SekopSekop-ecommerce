@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>@yield('title', 'Admin Panel')</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
 </head>
 
 <body class="bg-[#ddd] flex min-h-screen font-sans text-[#313647]">
@@ -39,31 +40,31 @@
             <a href="/admin/dashboard"
                 class="flex items-center gap-2 px-3 py-2 rounded transition
            {{ request()->is('admin/dashboard') ? 'bg-[#F28123] text-white' : 'hover:bg-[#F28123]/80' }}">
-                📊 <span>Dashboard</span>
+                <i class="fas fa-chart-bar"></i><span>Dashboard</span>
             </a>
 
             <!-- Produk -->
             <a href="{{ route('admin.products.index') }}"
                 class="flex items-center gap-2 px-3 py-2 rounded transition
            {{ request()->is('admin/products*') ? 'bg-[#F28123] text-white' : 'hover:bg-[#F28123]/80' }}">
-                🧱 <span>Produk</span>
+                <i class="fas fa-boxes"></i><span>Produk</span>
             </a>
 
             <!-- Kategori -->
             <a href="{{ route('admin.categories.index') }}"
                 class="flex items-center gap-2 px-3 py-2 rounded transition
            {{ request()->is('admin/categories*') ? 'bg-[#F28123] text-white' : 'hover:bg-[#F28123]/80' }}">
-                🗂️ <span>Kategori</span>
+                <i class="fas fa-window-restore"></i><span>Kategori</span>
             </a>
 
             <!-- Pesanan -->
             <a href="#" class="flex items-center gap-2 px-3 py-2 rounded transition hover:bg-[#F28123]/80">
-                📦 <span>Pesanan</span>
+                <i class="fas fa-truck-loading"></i><span>Pesanan</span>
             </a>
 
             <!-- User -->
             <a href="#" class="flex items-center gap-2 px-3 py-2 rounded transition hover:bg-[#F28123]/80">
-                👤 <span>User</span>
+                <i class="fas fa-user"></i><span>User</span>
             </a>
 
         </nav>
@@ -75,7 +76,7 @@
                 <button type="submit"
                     class="w-full flex items-center gap-2 px-3 py-2 rounded
                            bg-red-500 hover:bg-red-600 transition text-white">
-                    🚪 <span>Logout</span>
+                    <i class="fas fa-door-open"></i><span>Logout</span>
                 </button>
             </form>
         </div>

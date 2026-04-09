@@ -210,9 +210,9 @@
                                 <div class="client-meta">
                                     <h3>Saira Hakim <span>Local shop owner</span></h3>
                                     <p class="testimonial-body">
-                                        " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
-                                        beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis
-                                        iste natus error sit voluptatem accusantium "
+                                        "This platform really helps me find building materials quickly and efficiently. The
+                                        interface is simple, and the product information is very clear. It saves me a lot of
+                                        time."
                                     </p>
                                     <div class="last-icon">
                                         <i class="fas fa-quote-right"></i>
@@ -226,9 +226,9 @@
                                 <div class="client-meta">
                                     <h3>David Niph <span>Local shop owner</span></h3>
                                     <p class="testimonial-body">
-                                        " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
-                                        beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis
-                                        iste natus error sit voluptatem accusantium "
+                                        "This platform really helps me find building materials quickly and efficiently. The
+                                        interface is simple, and the product information is very clear. It saves me a lot of
+                                        time."
                                     </p>
                                     <div class="last-icon">
                                         <i class="fas fa-quote-right"></i>
@@ -242,9 +242,9 @@
                                 <div class="client-meta">
                                     <h3>Jacob Sikim <span>Local shop owner</span></h3>
                                     <p class="testimonial-body">
-                                        " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
-                                        beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis
-                                        iste natus error sit voluptatem accusantium "
+                                        "I had a great experience using this website. The product list is well organized,
+                                        and the checkout process is easy to understand. Highly recommended for anyone in
+                                        need of building supplies."
                                     </p>
                                     <div class="last-icon">
                                         <i class="fas fa-quote-right"></i>
@@ -307,8 +307,10 @@
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="section-title">
                             <h2><span class="orange-text">Tips</span> & Guides</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
-                                beatae optio.</p>
+                            <p>
+                                Discover useful tips and practical guides to help you choose the right building materials
+                                for your projects. We provide clear and reliable information to support your decisions.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -325,8 +327,11 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
-                                    Praesent vitae mattis nunc, egestas viverra eros.</p>
+                                <p>
+                                    A well-planned building process ensures both efficiency and safety. Always follow proper
+                                    procedures, use quality materials, and maintain a clean working environment to avoid
+                                    risks and delays.
+                                </p>
                                 <a href="single-news.html" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -343,8 +348,11 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
-                                    Praesent vitae mattis nunc, egestas viverra eros.</p>
+                                <p>
+                                    Choosing the right materials is essential for ensuring the durability and quality of
+                                    your project. Make sure to consider factors such as strength, cost, and long-term
+                                    performance before making a decision.
+                                </p>
                                 <a href="@" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
@@ -360,8 +368,11 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
-                                    Praesent vitae mattis nunc, egestas viverra eros.</p>
+                                <p>
+                                    A well-planned building process ensures both efficiency and safety. Always follow proper
+                                    procedures, use quality materials, and maintain a clean working environment to avoid
+                                    risks and delays.
+                                </p>
                                 <a href="#" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>

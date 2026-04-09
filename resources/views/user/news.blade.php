@@ -58,13 +58,14 @@
                                 <div class="latest-news-bg news-bg-1"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="/user/singlenews">You will vainly look for fruit on it in autumn.</a></h3>
+                                <h3><a href="/user/singlenews">Choosing the Right Materials for Your Project.</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">A well-planned building process ensures both efficiency and safety.
+                                    Always follow proper procedures, use quality materials, and maintain a clean working
+                                    environment to avoid risks and delays..</p>
                                 <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -76,13 +77,14 @@
                                 <div class="latest-news-bg news-bg-2"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="/user/singlenews">A man's worth has its season, like tomato.</a></h3>
+                                <h3><a href="/user/singlenews">Top 5 Essential Tools for Construction.</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Choosing the right materials is essential for ensuring the durability and
+                                    quality of your project. Make sure to consider factors such as strength, cost, and
+                                    long-term performance before making a decision.</p>
                                 <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -94,13 +96,14 @@
                                 <div class="latest-news-bg news-bg-3"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="/user/singlenews">Good thoughts bear good fresh juicy fruit.</a></h3>
+                                <h3><a href="/user/singlenews">Tips for Efficient and Safe Building Process.</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">A well-planned building process ensures both efficiency and safety.
+                                    Always follow proper procedures, use quality materials, and maintain a clean working
+                                    environment to avoid risks and delays.</p>
                                 <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -117,8 +120,11 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p>
+                                    Starting a construction project doesn’t always require a big budget. There are many
+                                    affordable materials available that still offer good quality and durability for
+                                    beginners.
+                                </p>
                                 <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -135,8 +141,11 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p>
+                                    Starting a construction project doesn’t always require a big budget. There are many
+                                    affordable materials available that still offer good quality and durability for
+                                    beginners.
+                                </p>
                                 <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -153,8 +162,11 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p>
+                                    Selecting durable materials is important to ensure long-lasting results. Focus on
+                                    material strength, resistance to weather conditions, and overall quality before making a
+                                    purchase.
+                                </p>
                                 <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>

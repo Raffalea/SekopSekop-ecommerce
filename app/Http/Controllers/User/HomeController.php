@@ -33,9 +33,32 @@ class HomeController extends Controller
     }
 
     public function cart()
-{
-    $products = Product::latest()->take(3)->get(); // bebas mau berapa
+    {
+        $products = Product::latest()->take(3)->get(); // bebas mau berapa
 
-    return view('user.cart', compact('products'));
-}
+        return view('user.cart', compact('products'));
+    }
+
+    public function show($id)
+    {
+        $product = Product::with('category')->findOrFail($id);
+
+        $relatedProducts = Product::where('category_id', $product->category_id)
+            ->where('id', '!=', $product->id)
+            ->take(3)
+            ->get();
+
+        return view('user.singleproduct', compact('product', 'relatedProducts'));
+    }
+
+    public function checkout()
+    {
+        $products = Product::all(); // atau bisa pakai where kalau mau filter
+
+        $subtotal = $products->sum('price');
+        $shipping = 50000;
+        $total = $subtotal + $shipping;
+
+        return view('user.checkout', compact('products', 'subtotal', 'shipping', 'total'));
+    }
 }

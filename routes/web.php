@@ -57,9 +57,7 @@ Route::middleware(['auth', 'role:user'])->group(function () {
         return view('user.about');
     })->name('user.about');
     Route::get('/user/cart', [HomeController::class, 'cart'])->name('user.cart');
-    Route::get('/user/checkout', function () {
-        return view('user.checkout');
-    })->name('user.checkout');
+    Route::get('/user/checkout', [HomeController::class, 'checkout'])->name('user.checkout');
     Route::get('/user/contact', function () {
         return view('user.contact');
     })->name('user.contact');
@@ -71,9 +69,8 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/singlenews', function () {
         return view('user.singlenews');
     })->name('user.singlenews');
-    Route::get('/user/singleproduct', function () {
-        return view('user.singleproduct');
-    })->name('user.singleproduct');
+    Route::get('/user/product/{id}', [HomeController::class, 'show'])
+        ->name('user.product.show');
     Route::get('/user/404', function () {
         return view('user.404');
     })->name('user.404');

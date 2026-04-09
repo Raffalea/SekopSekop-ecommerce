@@ -40,7 +40,7 @@
                         <!-- logo -->
                         <div class="site-logo">
                             <a href="/user/index">
-                                <img src=" {{asset('assets/img/logo.png')}}" alt="">
+                                <img src=" {{ asset('assets/img/logo.png') }}" alt="">
                             </a>
                         </div>
                         <!-- logo -->
@@ -73,7 +73,12 @@
                                     <ul class="sub-menu">
                                         <li><a href="/user/shop">Shop</a></li>
                                         <li><a href="/user/checkout">Check Out</a></li>
-                                        <li><a href="/user/singleproduct">Single Product</a></li>
+                                        {{-- <li>
+                                            <a
+                                                href="{{ route('user.product.show', \App\Models\Product::first()->id) }}">
+                                                Single Product
+                                            </a>
+                                        </li> --}}
                                         <li><a href="/user/cart">Cart</a></li>
                                     </ul>
                                 </li>

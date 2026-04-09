@@ -92,8 +92,8 @@
                                     Rp {{ number_format($product->price, 0, ',', '.') }}
                                 </p>
 
-                                <a href="{{ route('user.cart') }}" class="cart-btn"> <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
+                                <a href="{{ route('user.product.show', $product->id) }}" class="cart-btn">
+                                    <i class="fas fa-eye"></i> View Details
                                 </a>
 
                             </div>

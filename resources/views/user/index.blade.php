@@ -135,9 +135,8 @@
                                 </p>
 
                                 <!-- BUTTON -->
-                                <a href="/user/cart" class="cart-btn">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
+                                <a href="{{ route('user.product.show', $product->id) }}" class="cart-btn">
+                                    <i class="fas fa-eye"></i> View Details
                                 </a>
 
                             </div>
@@ -346,8 +345,7 @@
                                 </p>
                                 <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
                                     Praesent vitae mattis nunc, egestas viverra eros.</p>
-                                <a href="@" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
+                                <a href="@" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -364,8 +362,7 @@
                                 </p>
                                 <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
                                     Praesent vitae mattis nunc, egestas viverra eros.</p>
-                                <a href="#" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
+                                <a href="#" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>

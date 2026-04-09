@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="breadcrumb-text">
-                            <p>Fresh and Organic</p>
+                            <p>Your Building Materials</p>
                             <h1>Cart</h1>
                         </div>
                     </div>
@@ -57,11 +57,11 @@
                                 <thead class="cart-table-head">
                                     <tr class="table-head-row">
                                         <th class="product-remove"></th>
-                                        <th class="product-image">Product Image</th>
-                                        <th class="product-name">Name</th>
+                                        <th class="cart-img-col">Product Image</th>
+                                        <th class="cart-name-col">Name</th>
                                         <th class="product-price">Price</th>
                                         <th class="product-quantity">Quantity</th>
-                                        <th class="product-total">Total</th>
+                                        <th class="cart-total-col">Total</th>
                                     </tr>
                                 </thead>
                                 @php $total = 0; @endphp
@@ -74,24 +74,26 @@
                                                 <a href="#"><i class="far fa-window-close"></i></a>
                                             </td>
 
-                                            <td class="product-image">
+                                            <td class="cart-image">
                                                 <div class="cart-img-wrapper">
                                                     <img src="{{ asset('storage/' . $product->image) }}">
                                                 </div>
                                             </td>
-                                            <td class="product-name">
-                                                {{ $product->name }}
+
+                                            <td class="cart-name">
+                                                <div class="cart-name-text">
+                                                    {{ $product->name }}
+                                                </div>
                                             </td>
 
-                                            <td class="product-price">
-                                                Rp {{ number_format($product->price, 0, ',', '.') }}
+                                            <td class="cart-price"> Rp {{ number_format($product->price, 0, ',', '.') }}
                                             </td>
 
                                             <td class="product-quantity">
                                                 <input type="number" value="1">
                                             </td>
 
-                                            <td class="product-total">
+                                            <td class="cart-total">
                                                 Rp {{ number_format($product->price, 0, ',', '.') }}
                                             </td>
 
@@ -127,7 +129,7 @@
                                 </tbody>
                             </table>
                             <div class="cart-buttons">
-                                <a href="cart.html" class="boxed-btn">Update Cart</a>
+                                <a href="/user/cart" class="boxed-btn">Update Cart</a>
                                 <a href="/user/checkout" class="boxed-btn black">Check Out</a>
                             </div>
                         </div>
@@ -135,7 +137,7 @@
                         <div class="coupon-section">
                             <h3>Apply Coupon</h3>
                             <div class="coupon-form-wrap">
-                                <form action="index.html">
+                                <form action="/user/cart">
                                     <p><input type="text" placeholder="Coupon"></p>
                                     <p><input type="submit" value="Apply"></p>
                                 </form>

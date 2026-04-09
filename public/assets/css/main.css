@@ -1104,7 +1104,10 @@ a.tof-btn:hover i {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
+.latest-news .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .single-logo-item {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;

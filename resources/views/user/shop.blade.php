@@ -110,7 +110,7 @@
 
                                         {{-- PREV --}}
                                         @if ($products->onFirstPage())
-                                            <li><span>Prev</span></li>
+                                            <li><a href="#">Prev</a></li>
                                         @else
                                             <li>
                                                 <a href="{{ $products->previousPageUrl() }}">Prev</a>
@@ -118,13 +118,14 @@
                                         @endif
 
                                         {{-- NUMBER --}}
-                                        @foreach ($products->getUrlRange(1, $products->lastPage()) as $page => $url)
-                                            @if ($page == $products->currentPage())
-                                                <li><a class="active" href="#">{{ $page }}</a></li>
-                                            @else
-                                                <li><a href="{{ $url }}">{{ $page }}</a></li>
-                                            @endif
-                                        @endforeach
+                                        @for ($i = 1; $i <= $products->lastPage(); $i++)
+                                            <li>
+                                                <a href="{{ $products->url($i) }}"
+                                                    class="{{ $products->currentPage() == $i ? 'active' : '' }}">
+                                                    {{ $i }}
+                                                </a>
+                                            </li>
+                                        @endfor
 
                                         {{-- NEXT --}}
                                         @if ($products->hasMorePages())
@@ -132,7 +133,7 @@
                                                 <a href="{{ $products->nextPageUrl() }}">Next</a>
                                             </li>
                                         @else
-                                            <li><span>Next</span></li>
+                                            <li><a href="#">Next</a></li>
                                         @endif
 
                                     </ul>
@@ -222,28 +223,7 @@
         <!-- end footer -->
 
         <!-- copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        {{-- <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
-					</p> --}}
-                    </div>
-                    <div class="col-lg-6 text-right col-md-12">
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- end copyright -->
 
         {{-- <!-- jquery -->

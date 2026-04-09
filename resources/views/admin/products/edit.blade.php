@@ -82,7 +82,7 @@
         <!-- Button -->
         <div class="flex gap-3 pt-4">
             <button
-                class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg">
+                class="bg-[#F28123] hover:bg-[#F28123]/80 text-white px-6 py-2 rounded-lg">
                 Update
             </button>
 

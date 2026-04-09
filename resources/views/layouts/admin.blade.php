@@ -57,6 +57,13 @@
                 <i class="fas fa-window-restore"></i><span>Kategori</span>
             </a>
 
+            <!-- News -->
+            <a href="{{ route('admin.news.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded transition
+           {{ request()->is('admin/news*') ? 'bg-[#F28123] text-white' : 'hover:bg-[#F28123]/80' }}">
+                <i class="fas fa-newspaper"></i><span>News</span>
+            </a>
+
             <!-- Pesanan -->
             <a href="#" class="flex items-center gap-2 px-3 py-2 rounded transition hover:bg-[#F28123]/80">
                 <i class="fas fa-truck-loading"></i><span>Pesanan</span>
@@ -75,7 +82,7 @@
                 @csrf
                 <button type="submit"
                     class="w-full flex items-center gap-2 px-3 py-2 rounded
-                           bg-red-500 hover:bg-red-600 transition text-white">
+                           bg-[#F28123] hover:bg-red-600 transition text-white">
                     <i class="fas fa-door-open"></i><span>Logout</span>
                 </button>
             </form>

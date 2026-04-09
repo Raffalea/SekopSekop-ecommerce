@@ -120,7 +120,7 @@
 
                                 <!-- IMAGE -->
                                 <div class="product-image">
-                                    <a href="#">
+                                    <a href="{{ route('user.product.show', $product->id) }}">
                                         <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
                                     </a>
                                 </div>
@@ -303,6 +303,7 @@
         <div class="latest-news pt-150 pb-150">
             <div class="container">
 
+                <!-- TITLE -->
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="section-title">
@@ -315,74 +316,58 @@
                     </div>
                 </div>
 
+                <!-- NEWS (TETAP 3 ITEM FIX) -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="#">
-                                <div class="latest-news-bg news-bg-1"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="#">Choosing the Right Materials for Your Project</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p>
-                                    A well-planned building process ensures both efficiency and safety. Always follow proper
-                                    procedures, use quality materials, and maintain a clean working environment to avoid
-                                    risks and delays.
-                                </p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
+
+                    @foreach ($news->take(3) as $item)
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-latest-news">
+
+                                <a href="{{ route('user.news.show', $item->id) }}">
+                                    <div class="latest-news-bg"
+                                        style="background-image: url('{{ asset('storage/' . $item->image) }}');">
+                                    </div>
+                                </a>
+
+                                <div class="news-text-box">
+                                    <h3>
+                                        <a href="{{ route('user.news.show', $item->id) }}">
+                                            {{ $item->title }}
+                                        </a>
+                                    </h3>
+
+                                    <p class="blog-meta">
+                                        <span class="author">
+                                            <i class="fas fa-user"></i> Admin
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-calendar"></i>
+                                            {{ $item->created_at->format('d F, Y') }}
+                                        </span>
+                                    </p>
+
+                                    <p>
+                                        {{ \Illuminate\Support\Str::limit($item->content, 120) }}
+                                    </p>
+
+                                    <a href="{{ route('user.news.show', $item->id) }}" class="read-more-btn">
+                                        read more <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="#">
-                                <div class="latest-news-bg news-bg-2"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="#">Top 5 Essential Tools for Construction</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p>
-                                    Choosing the right materials is essential for ensuring the durability and quality of
-                                    your project. Make sure to consider factors such as strength, cost, and long-term
-                                    performance before making a decision.
-                                </p>
-                                <a href="@" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                        <div class="single-latest-news">
-                            <a href="#">
-                                <div class="latest-news-bg news-bg-3"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="#">Tips for Efficient and Safe Building Process</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p>
-                                    A well-planned building process ensures both efficiency and safety. Always follow proper
-                                    procedures, use quality materials, and maintain a clean working environment to avoid
-                                    risks and delays.
-                                </p>
-                                <a href="#" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
+
+                <!-- BUTTON (INI YANG ILANG TADI) -->
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <a href="/user/news" class="boxed-btn">More News</a>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- end latest news -->
@@ -418,7 +403,7 @@
 
 
         <!-- copyright -->
-        <div class="copyright">
+        {{-- <div class="copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -426,7 +411,7 @@
                             Reserved.<br>
                             Distributed By - <a href="https://themewagon.com/">Themewagon</a>
                         </p> --}}
-                    </div>
+                    {{-- </div>
                     <div class="col-lg-6 text-right col-md-12">
                         <div class="social-icons">
                             <ul>
@@ -440,7 +425,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}} 
         <!-- end copyright -->
         {{-- 	
 	<!-- jquery -->

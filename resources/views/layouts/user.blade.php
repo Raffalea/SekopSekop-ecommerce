@@ -63,10 +63,10 @@
                                     </ul>
                                 </li> --}}
                                 <li><a href="/user/news">News</a>
-                                    <ul class="sub-menu">
+                                    {{-- <ul class="sub-menu">
                                         <li><a href="/user/news">News</a></li>
                                         <li><a href="/user/singlenews">Single News</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
                                 <li><a href="/user/contact">Contact</a></li>
                                 <li><a href="/user/shop">Shop</a>
@@ -168,6 +168,29 @@
         </div>
     </div>
     <!-- end footer -->
+    <!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">TWS Together</a>,  All Rights Reserved.<br>
+						Distributed By - <a href="https://themewagon.com/">SekopSekop</a>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

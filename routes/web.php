@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\User\HomeController;
+use App\Http\Controllers\Admin\NewsController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -43,6 +44,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     Route::resource('categories', CategoryController::class)
         ->names('admin.categories');
+
+    Route::resource('news', NewsController::class)
+        ->names('admin.news');
 });
 
 Route::middleware(['auth', 'role:user'])->group(function () {
@@ -61,17 +65,21 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/contact', function () {
         return view('user.contact');
     })->name('user.contact');
-    Route::get('/user/news', function () {
-        return view('user.news');
-    })->name('user.news');
+    Route::get('/user/news', [HomeController::class, 'news'])
+        ->name('user.news');
     Route::get('/user/shop', [HomeController::class, 'shop'])
         ->name('user.shop');
-    Route::get('/user/singlenews', function () {
-        return view('user.singlenews');
-    })->name('user.singlenews');
+    // Route::get('/user/singlenews', function () {
+    //     return view('user.singlenews');
+    // })->name('user.singlenews');
     Route::get('/user/product/{id}', [HomeController::class, 'show'])
         ->name('user.product.show');
     Route::get('/user/404', function () {
         return view('user.404');
     })->name('user.404');
+    Route::get('/user/news/{id}', [HomeController::class, 'showNews'])
+        ->name('user.news.show');
+    // Route::prefix('admin')->group(function () {
+    //     Route::resource('news', NewsController::class);
+    // });
 });

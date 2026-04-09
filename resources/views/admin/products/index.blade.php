@@ -6,7 +6,7 @@
 @section('content')
 
 <a href="{{ route('admin.products.create') }}"
-   class="inline-block mb-5 bg-orange-600 hover:bg-orange-700
+   class="inline-block mb-5 bg-[#F28123] hover:bg-[#F28123]/80
           text-white px-5 py-2 rounded-lg">
     + Tambah Produk
 </a>

@@ -51,146 +51,99 @@
         <!-- latest news -->
         <div class="latest-news mt-150 mb-150">
             <div class="container">
+
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="/user/singlenews">
-                                <div class="latest-news-bg news-bg-1"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="/user/singlenews">Choosing the Right Materials for Your Project.</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p class="excerpt">A well-planned building process ensures both efficiency and safety.
-                                    Always follow proper procedures, use quality materials, and maintain a clean working
-                                    environment to avoid risks and delays..</p>
-                                <a href="/user/singlenews" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
+                    @forelse ($news as $item)
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-latest-news">
+
+                                <!-- IMAGE -->
+                                <a href="{{ route('user.news.show', $item->id) }}">
+                                    <div class="latest-news-bg"
+                                        style="background-image: url('{{ asset('storage/' . $item->image) }}');">
+                                    </div>
+                                </a>
+
+                                <!-- CONTENT -->
+                                <div class="news-text-box">
+
+                                    <h3>
+                                        <a href="{{ route('user.news.show', $item->id) }}">
+                                            {{ $item->title }}
+                                        </a>
+                                    </h3>
+
+                                    <p class="blog-meta">
+                                        <span class="author">
+                                            <i class="fas fa-user"></i> Admin
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-calendar"></i>
+                                            {{ $item->created_at->format('d F, Y') }}
+                                        </span>
+                                    </p>
+
+                                    <p class="excerpt">
+                                        {{ \Illuminate\Support\Str::limit($item->content, 120) }}
+                                    </p>
+
+                                    <a href="{{ route('user.news.show', $item->id) }}" class="read-more-btn">
+                                        read more <i class="fas fa-angle-right"></i>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="/user/singlenews">
-                                <div class="latest-news-bg news-bg-2"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="/user/singlenews">Top 5 Essential Tools for Construction.</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p class="excerpt">Choosing the right materials is essential for ensuring the durability and
-                                    quality of your project. Make sure to consider factors such as strength, cost, and
-                                    long-term performance before making a decision.</p>
-                                <a href="/user/singlenews" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
-                            </div>
+                    @empty
+                        <div class="col-12 text-center">
+                            <p>No news available.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="/user/singlenews">
-                                <div class="latest-news-bg news-bg-3"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="/user/singlenews">Tips for Efficient and Safe Building Process.</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p class="excerpt">A well-planned building process ensures both efficiency and safety.
-                                    Always follow proper procedures, use quality materials, and maintain a clean working
-                                    environment to avoid risks and delays.</p>
-                                <a href="/user/singlenews" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="/user/singlenews">
-                                <div class="latest-news-bg news-bg-4"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="/user/singlenews">Budget-Friendly Building Materials for Beginners</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p>
-                                    Starting a construction project doesn’t always require a big budget. There are many
-                                    affordable materials available that still offer good quality and durability for
-                                    beginners.
-                                </p>
-                                <a href="/user/singlenews" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="/user/singlenews">
-                                <div class="latest-news-bg news-bg-5"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="/user/singlenews">How to Choose Durable Construction Materials</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                                </p>
-                                <p>
-                                    Starting a construction project doesn’t always require a big budget. There are many
-                                    affordable materials available that still offer good quality and durability for
-                                    beginners.
-                                </p>
-                                <a href="/user/singlenews" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-news">
-                            <a href="/user/singlenews">
-                                <div class="latest-news-bg news-bg-6"></div>
-                            </a>
-                            <div class="news-text-box">
-                                <h3><a href="/user/singlenews">Must-Have Equipment for Every Builder</a></h3>
-                                <p class="blog-meta">
-                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
-                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
-                                </p>
-                                <p>
-                                    Selecting durable materials is important to ensure long-lasting results. Focus on
-                                    material strength, resistance to weather conditions, and overall quality before making a
-                                    purchase.
-                                </p>
-                                <a href="/user/singlenews" class="read-more-btn">read more <i
-                                        class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforelse
                 </div>
 
+                <!-- PAGINATION -->
                 <div class="row">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <div class="pagination-wrap">
                                     <ul>
-                                        <li><a href="#">Prev</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a class="active" href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">Next</a></li>
+
+                                        {{-- PREV --}}
+                                        @if ($news->onFirstPage())
+                                            <li><a href="#">Prev</a></li>
+                                        @else
+                                            <li>
+                                                <a href="{{ $news->previousPageUrl() }}">Prev</a>
+                                            </li>
+                                        @endif
+
+                                        {{-- NUMBER --}}
+                                        @for ($i = 1; $i <= $news->lastPage(); $i++)
+                                            <li>
+                                                <a href="{{ $news->url($i) }}"
+                                                    class="{{ $news->currentPage() == $i ? 'active' : '' }}">
+                                                    {{ $i }}
+                                                </a>
+                                            </li>
+                                        @endfor
+
+                                        {{-- NEXT --}}
+                                        @if ($news->hasMorePages())
+                                            <li>
+                                                <a href="{{ $news->nextPageUrl() }}">Next</a>
+                                            </li>
+                                        @else
+                                            <li><a href="#">Next</a></li>
+                                        @endif
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- end latest news -->
@@ -271,28 +224,7 @@
 	<!-- end footer --> --}}
 
         <!-- copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        {{-- <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
-					</p> --}}
-                    </div>
-                    <div class="col-lg-6 text-right col-md-12">
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- end copyright -->
 
         {{-- <!-- jquery -->

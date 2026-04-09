@@ -5,14 +5,15 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\News;
 
 class HomeController extends Controller
 {
     public function index()
     {
         $products = Product::latest()->take(3)->get();
-
-        return view('user.index', compact('products'));
+        $news = News::latest()->take(3)->get();
+        return view('user.index', compact('products', 'news'));
     }
 
     public function shop()
@@ -60,5 +61,25 @@ class HomeController extends Controller
         $total = $subtotal + $shipping;
 
         return view('user.checkout', compact('products', 'subtotal', 'shipping', 'total'));
+    }
+
+    public function showNews($id)
+    {
+        $news = News::findOrFail($id);
+
+        // recent posts (5 terbaru selain yang dibuka)
+        $recentNews = News::where('id', '!=', $id)
+            ->latest()
+            ->take(5)
+            ->get();
+
+        return view('user.singlenews', compact('news', 'recentNews'));
+    }
+
+    public function news()
+    {
+        $news = News::latest()->paginate(6); // biar ada pagination
+
+        return view('user.news', compact('news'));
     }
 }

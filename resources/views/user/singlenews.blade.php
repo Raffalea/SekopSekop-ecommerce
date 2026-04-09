@@ -59,7 +59,7 @@
                             <div class="comment-list">
                                 <div class="single-comment-body">
                                     <div class="comment-user-avater">
-                                        <img src="assets/img/avaters/avatar1.png" alt="">
+                                        <img src="{{asset('assets/img/avaters/avatar1.png')}}" alt="">
                                     </div>
                                     <div class="comment-text-body">
                                         <h4>Jenny Joe <span class="comment-date">Jan 12, 2024</span> <a href="#">reply</a></h4>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="single-comment-body child">
                                         <div class="comment-user-avater">
-                                            <img src="assets/img/avaters/avatar3.png" alt="">
+                                            <img src="{{asset('assets/img/avaters/avatar3.png')}}" alt="">
                                         </div>
                                         <div class="comment-text-body">
                                             <h4>Simon Soe <span class="comment-date">Jan 13, 2024</span> <a href="#">reply</a></h4>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="single-comment-body">
                                     <div class="comment-user-avater">
-                                        <img src="assets/img/avaters/avatar2.png" alt="">
+                                        <img src="{{asset('assets/img/avaters/avatar2.png')}}" alt="">
                                     </div>
                                     <div class="comment-text-body">
                                         <h4>Addy Aoe <span class="comment-date">Feb 02, 2024</span> <a href="#">reply</a></h4>
@@ -106,32 +106,32 @@
                         <div class="recent-posts">
                             <h4>Recent Posts</h4>
                             <ul>
-                                <li><a href="single-news.html">5 Tips for Choosing Anti-Slip Bathroom Floor Tiles.</a></li>
-                                <li><a href="single-news.html">Fundamental Differences Between Red Bricks, Lightweight Blocks, and Concrete Blocks.</a></li>
-                                <li><a href="single-news.html">How to Accurately Calculate Cement Requirements for Plastering.</a></li>
-                                <li><a href="single-news.html">Understanding the Types of Mild Steel for Roof Trusses.</a></li>
-                                <li><a href="single-news.html">Exterior Paint Color Inspirations for Extreme Weather.</a></li>
+                                <li><a href="/user/singlenews">5 Tips for Choosing Anti-Slip Bathroom Floor Tiles.</a></li>
+                                <li><a href="/user/singlenews">Fundamental Differences Between Red Bricks, Lightweight Blocks, and Concrete Blocks.</a></li>
+                                <li><a href="/user/singlenews">How to Accurately Calculate Cement Requirements for Plastering.</a></li>
+                                <li><a href="/user/singlenews">Understanding the Types of Mild Steel for Roof Trusses.</a></li>
+                                <li><a href="/user/singlenews">Exterior Paint Color Inspirations for Extreme Weather.</a></li>
                             </ul>
                         </div>
                         <div class="archive-posts">
                             <h4>Archive Posts</h4>
                             <ul>
-                                <li><a href="single-news.html">JAN 2024 (5)</a></li>
-                                <li><a href="single-news.html">FEB 2024 (3)</a></li>
-                                <li><a href="single-news.html">MAY 2024 (4)</a></li>
-                                <li><a href="single-news.html">SEP 2023 (4)</a></li>
-                                <li><a href="single-news.html">DEC 2023 (3)</a></li>
+                                <li><a href="/user/singlenews">JAN 2024 (5)</a></li>
+                                <li><a href="/user/singlenews">FEB 2024 (3)</a></li>
+                                <li><a href="/user/singlenews">MAY 2024 (4)</a></li>
+                                <li><a href="/user/singlenews">SEP 2023 (4)</a></li>
+                                <li><a href="/user/singlenews">DEC 2023 (3)</a></li>
                             </ul>
                         </div>
                         <div class="tag-section">
                             <h4>Tags</h4>
                             <ul>
-                                <li><a href="single-news.html">Cement</a></li>
-                                <li><a href="single-news.html">Steel Rebar</a></li>
-                                <li><a href="single-news.html">Lightweight Block</a></li>
-                                <li><a href="single-news.html">Mild Steel</a></li>
-                                <li><a href="single-news.html">Ceramic Tiles</a></li>
-                                <li><a href="single-news.html">Wall Paint</a></li>
+                                <li><a href="/user/singlenews">Cement</a></li>
+                                <li><a href="/user/singlenews">Steel Rebar</a></li>
+                                <li><a href="/user/singlenews">Lightweight Block</a></li>
+                                <li><a href="/user/singlenews">Mild Steel</a></li>
+                                <li><a href="/user/singlenews">Ceramic Tiles</a></li>
+                                <li><a href="/user/singlenews">Wall Paint</a></li>
                             </ul>
                         </div>
                     </div>
@@ -139,97 +139,7 @@
             </div>
         </div>
     </div>
-    <div class="logo-carousel-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="logo-carousel-inner">
-                        <div class="single-logo-item">
-                            <img src="assets/img/company-logos/1.png" alt="">
-                        </div>
-                        <div class="single-logo-item">
-                            <img src="assets/img/company-logos/2.png" alt="">
-                        </div>
-                        <div class="single-logo-item">
-                            <img src="assets/img/company-logos/3.png" alt="">
-                        </div>
-                        <div class="single-logo-item">
-                            <img src="assets/img/company-logos/4.png" alt="">
-                        </div>
-                        <div class="single-logo-item">
-                            <img src="assets/img/company-logos/5.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-box about-widget">
-                        <h2 class="widget-title">About us</h2>
-                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-box get-in-touch">
-                        <h2 class="widget-title">Get in Touch</h2>
-                        <ul>
-                            <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-                            <li>support@fruitkha.com</li>
-                            <li>+00 111 222 3333</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-box pages">
-                        <h2 class="widget-title">Pages</h2>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Shop</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-box subscribe">
-                        <h2 class="widget-title">Subscribe</h2>
-                        <p>Subscribe to our mailing list to get the latest updates.</p>
-                        <form action="index.html">
-                            <input type="email" placeholder="Email">
-                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-                        Distributed By - <a href="https://themewagon.com/">Themewagon</a>
-                    </p>
-                </div>
-                <div class="col-lg-6 text-right col-md-12">
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     {{-- <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.countdown.js"></script>

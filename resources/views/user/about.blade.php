@@ -3,16 +3,11 @@
 @section('content')
 
     <body>
-        <!--PreLoader-->
         <div class="loader">
             <div class="loader-inner">
                 <div class="circle"></div>
             </div>
         </div>
-        <!--PreLoader Ends-->
-
-
-        <!-- search area -->
         <div class="search-area">
             <div class="container">
                 <div class="row">
@@ -29,9 +24,6 @@
                 </div>
             </div>
         </div>
-        <!-- end search arewa -->
-
-        <!-- breadcrumb-section -->
         <div class="breadcrumb-section breadcrumb-bg">
             <div class="container">
                 <div class="row">
@@ -44,9 +36,6 @@
                 </div>
             </div>
         </div>
-        <!-- end breadcrumb section -->
-
-        <!-- featured section -->
         <div class="feature-bg">
             <div class="container">
                 <div class="row">
@@ -61,8 +50,8 @@
                                         </div>
                                         <div class="content">
                                             <h3>Home Delivery</h3>
-                                            <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque
-                                                ipsa quae ab illo.</p>
+                                            <p>Reliable and timely logistics ensuring your construction materials arrive
+                                                safely at your doorstep, right when you need them.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -73,8 +62,8 @@
                                         </div>
                                         <div class="content">
                                             <h3>Best Price</h3>
-                                            <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque
-                                                ipsa quae ab illo.</p>
+                                            <p>We offer competitive market rates without compromising on quality, helping
+                                                you build more while spending less.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -85,8 +74,8 @@
                                         </div>
                                         <div class="content">
                                             <h3>Custom Box</h3>
-                                            <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque
-                                                ipsa quae ab illo.</p>
+                                            <p>Flexible packaging and bulk ordering options tailored specifically to your
+                                                project requirements and site specifications.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -97,8 +86,8 @@
                                         </div>
                                         <div class="content">
                                             <h3>Quick Refund</h3>
-                                            <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque
-                                                ipsa quae ab illo.</p>
+                                            <p>Experience a hassle-free return policy. We prioritize your satisfaction with
+                                                a straightforward and transparent refund process.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -108,27 +97,21 @@
                 </div>
             </div>
         </div>
-        <!-- end featured section -->
-
-        <!-- shop banner -->
         {{-- <section class="shop-banner">
-    	<div class="container">
-        	<h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
+        <div class="container">
+            <h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
             <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
             <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
         </div>
     </section> --}}
-        <!-- end shop banner -->
-
-        <!-- team section -->
         <div class="mt-150">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="section-title">
                             <h3>Our <span class="orange-text">Team</span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
-                                beatae optio.</p>
+                            <p>Meet the dedicated experts behind SekopSekop, committed to providing the best construction
+                                solutions for your vision.</p>
                         </div>
                     </div>
                 </div>
@@ -169,9 +152,6 @@
                 </div>
             </div>
         </div>
-        <!-- end team section -->
-
-        <!-- testimonail-section -->
         <div class="testimonail-section mt-150 mb-150">
             <div class="container">
                 <div class="row">
@@ -184,9 +164,9 @@
                                 <div class="client-meta">
                                     <h3>Saira Hakim <span>Local shop owner</span></h3>
                                     <p class="testimonial-body">
-                                        " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
-                                        beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis
-                                        iste natus error sit voluptatem accusantium "
+                                        " SekopSekop has been our most reliable supplier. Their prompt deliveries and
+                                        high-quality materials ensure my shop is always stocked. Highly recommended for any
+                                        local business. "
                                     </p>
                                     <div class="last-icon">
                                         <i class="fas fa-quote-right"></i>
@@ -200,9 +180,9 @@
                                 <div class="client-meta">
                                     <h3>David Niph <span>Local shop owner</span></h3>
                                     <p class="testimonial-body">
-                                        " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
-                                        beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis
-                                        iste natus error sit voluptatem accusantium "
+                                        " Finding competitively priced construction materials without compromising on
+                                        durability used to be a challenge. SekopSekop changed that with their excellent
+                                        service and fair pricing. "
                                     </p>
                                     <div class="last-icon">
                                         <i class="fas fa-quote-right"></i>
@@ -216,9 +196,9 @@
                                 <div class="client-meta">
                                     <h3>Jacob Sikim <span>Local shop owner</span></h3>
                                     <p class="testimonial-body">
-                                        " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto
-                                        beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis
-                                        iste natus error sit voluptatem accusantium "
+                                        " Their customer service is unmatched. From helping me sort out bulk orders to their
+                                        hassle-free refund process, every transaction with SekopSekop is incredibly smooth.
+                                        "
                                     </p>
                                     <div class="last-icon">
                                         <i class="fas fa-quote-right"></i>
@@ -230,38 +210,32 @@
                 </div>
             </div>
         </div>
-        <!-- end testimonail-section -->	
-
-        {{-- <!-- logo carousel -->
-	<div class="logo-carousel-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="logo-carousel-inner">
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/1.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/2.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/3.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/4.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/5.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> --}}
-        <!-- end logo carousel -->
-
-        {{-- <!-- footer -->
-        <div class="footer-area">
+        {{-- <div class="logo-carousel-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo-carousel-inner">
+                        <div class="single-logo-item">
+                            <img src="assets/img/company-logos/1.png" alt="">
+                        </div>
+                        <div class="single-logo-item">
+                            <img src="assets/img/company-logos/2.png" alt="">
+                        </div>
+                        <div class="single-logo-item">
+                            <img src="assets/img/company-logos/3.png" alt="">
+                        </div>
+                        <div class="single-logo-item">
+                            <img src="assets/img/company-logos/4.png" alt="">
+                        </div>
+                        <div class="single-logo-item">
+                            <img src="assets/img/company-logos/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+        {{-- <div class="footer-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -306,9 +280,8 @@
                 </div>
             </div>
         </div>
-        <!-- end footer --> --}}
+        --}}
 
-        <!-- copyright -->
         <div class="copyright">
             <div class="container">
                 <div class="row">
@@ -332,5 +305,4 @@
                 </div>
             </div>
         </div>
-        <!-- end copyright -->
     </body>

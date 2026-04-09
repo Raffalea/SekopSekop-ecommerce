@@ -127,8 +127,9 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-box about-widget">
                         <h2 class="widget-title">About us</h2>
-                        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                        <p>SekopSekop is your trusted partner in construction, providing high-quality building
+                            materials, competitive pricing, and reliable delivery services to help you build with
+                            confidence.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">

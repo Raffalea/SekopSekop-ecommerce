@@ -56,9 +56,7 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/about', function () {
         return view('user.about');
     })->name('user.about');
-    Route::get('/user/cart', function () {
-        return view('user.cart');
-    })->name('user.cart');
+    Route::get('/user/cart', [HomeController::class, 'cart'])->name('user.cart');
     Route::get('/user/checkout', function () {
         return view('user.checkout');
     })->name('user.checkout');

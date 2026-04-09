@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="breadcrumb-text">
-                            <p>Organic Information</p>
+                            <p>Information</p>
                             <h1>News Article</h1>
                         </div>
                     </div>
@@ -54,108 +54,108 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="/user/singlenews">
                                 <div class="latest-news-bg news-bg-1"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></h3>
+                                <h3><a href="/user/singlenews">You will vainly look for fruit on it in autumn.</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                                     laborum autem, dolores inventore, beatae nam.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="/user/singlenews">
                                 <div class="latest-news-bg news-bg-2"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">A man's worth has its season, like tomato.</a></h3>
+                                <h3><a href="/user/singlenews">A man's worth has its season, like tomato.</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                                     laborum autem, dolores inventore, beatae nam.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="/user/singlenews">
                                 <div class="latest-news-bg news-bg-3"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
+                                <h3><a href="/user/singlenews">Good thoughts bear good fresh juicy fruit.</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                                     laborum autem, dolores inventore, beatae nam.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="/user/singlenews">
                                 <div class="latest-news-bg news-bg-4"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">Budget-Friendly Building Materials for Beginners</a></h3>
+                                <h3><a href="/user/singlenews">Budget-Friendly Building Materials for Beginners</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                                     laborum autem, dolores inventore, beatae nam.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="/user/singlenews">
                                 <div class="latest-news-bg news-bg-5"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">How to Choose Durable Construction Materials</a></h3>
+                                <h3><a href="/user/singlenews">How to Choose Durable Construction Materials</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                                     laborum autem, dolores inventore, beatae nam.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="/user/singlenews">
                                 <div class="latest-news-bg news-bg-6"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">Must-Have Equipment for Every Builder</a></h3>
+                                <h3><a href="/user/singlenews">Must-Have Equipment for Every Builder</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
                                 </p>
                                 <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                                     laborum autem, dolores inventore, beatae nam.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="/user/singlenews" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>

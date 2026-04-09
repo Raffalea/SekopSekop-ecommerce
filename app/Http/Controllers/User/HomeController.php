@@ -31,4 +31,11 @@ class HomeController extends Controller
 
         return view('user.shop', compact('products', 'categories'));
     }
+
+    public function cart()
+{
+    $products = Product::latest()->take(3)->get(); // bebas mau berapa
+
+    return view('user.cart', compact('products'));
+}
 }

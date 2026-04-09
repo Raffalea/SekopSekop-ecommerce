@@ -42,8 +42,8 @@
                                 <p class="subtitle">BUILDING MATERIAL SOLUTION</p>
                                 <h1>Build Better</h1>
                                 <div class="hero-btns">
-                                    <a href="shop.html" class="boxed-btn">Shop Now</a>
-                                    <a href="contact.html" class="bordered-btn">Explore Categories</a>
+                                    <a href="/user/shop" class="boxed-btn">Shop Now</a>
+                                    <a href="/user/contact" class="bordered-btn">Explore Categories</a>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                 </p>
 
                                 <!-- BUTTON -->
-                                <a href="#" class="cart-btn">
+                                <a href="/user/cart" class="cart-btn">
                                     <i class="fas fa-shopping-cart"></i>
                                     Add to Cart
                                 </a>
@@ -317,11 +317,11 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="#">
                                 <div class="latest-news-bg news-bg-1"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">Choosing the Right Materials for Your Project</a></h3>
+                                <h3><a href="#">Choosing the Right Materials for Your Project</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
@@ -335,36 +335,36 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="#">
                                 <div class="latest-news-bg news-bg-2"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">Top 5 Essential Tools for Construction</a></h3>
+                                <h3><a href="#">Top 5 Essential Tools for Construction</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
                                     Praesent vitae mattis nunc, egestas viverra eros.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="@" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
                         <div class="single-latest-news">
-                            <a href="single-news.html">
+                            <a href="#">
                                 <div class="latest-news-bg news-bg-3"></div>
                             </a>
                             <div class="news-text-box">
-                                <h3><a href="single-news.html">Tips for Efficient and Safe Building Process</a></h3>
+                                <h3><a href="#">Tips for Efficient and Safe Building Process</a></h3>
                                 <p class="blog-meta">
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
                                 <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
                                     Praesent vitae mattis nunc, egestas viverra eros.</p>
-                                <a href="single-news.html" class="read-more-btn">read more <i
+                                <a href="#" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
@@ -372,7 +372,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <a href="news.html" class="boxed-btn">More News</a>
+                        <a href="/user/news" class="boxed-btn">More News</a>
                     </div>
                 </div>
             </div>
